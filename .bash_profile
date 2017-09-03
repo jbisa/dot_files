@@ -1,3 +1,9 @@
+#------------------------------------------------
+# Jay Bisa <jay.bisa@gmail.com>
+# Last Updated: 9.3.2017
+#
+# ~/.bash_profile Configs for Mac OS X
+#------------------------------------------------
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/jbisa/anaconda/bin:$PATH"

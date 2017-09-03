@@ -1,3 +1,10 @@
+#-----------------------------------------------------------
+# Jay Bisa <jay.bisa@gmail.com>
+# Last Updated: 9.3.2017
+#
+# ~/.gitconfig Global git configs and aliases
+#-----------------------------------------------------------
+
 [user]
 	name = Jay Bisa
 	email = jay.bisa@gmail.com
