@@ -1,9 +1,13 @@
 #------------------------------------------------
 # Jay Bisa <jay.bisa@gmail.com>
-# Last Updated: 9.3.2017
+# Last Updated: 9.10.2017
 #
 # ~/.bash_profile Configs for Mac OS X
 #------------------------------------------------
+
+# Aliases
+alias venv='python3 -m venv'
+alias install-pip='curl https://bootstrap.pypa.io/get-pip.py | python'
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/jbisa/anaconda/bin:$PATH"
