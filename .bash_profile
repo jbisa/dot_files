@@ -1,6 +1,6 @@
 #------------------------------------------------
 # Jay Bisa <jay.bisa@gmail.com>
-# Last Updated: 9.10.2017
+# Last Updated: 6.2.2018
 #
 # ~/.bash_profile Configs for Mac OS X
 #------------------------------------------------
@@ -8,6 +8,7 @@
 # Aliases
 alias venv='python3 -m venv'
 alias install-pip='curl https://bootstrap.pypa.io/get-pip.py | python'
+alias rs='redis-server /usr/local/etc/redis.conf'
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/jbisa/anaconda/bin:$PATH"
@@ -47,3 +48,10 @@ export PS1
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# Homestead
+function homestead() {
+  ( cd ~/Homestead && vagrant $* )
+}
+
+export -f homestead
