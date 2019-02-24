@@ -1,6 +1,6 @@
 #------------------------------------------------
 # Jay Bisa <jay.bisa@gmail.com>
-# Last Updated: 6.2.2018
+# Last Updated: 2.24.2019
 #
 # ~/.bash_profile Configs for Mac OS X
 #------------------------------------------------
@@ -9,6 +9,7 @@
 alias venv='python3 -m venv'
 alias install-pip='curl https://bootstrap.pypa.io/get-pip.py | python'
 alias rs='redis-server /usr/local/etc/redis.conf'
+alias cgrep='grep --color=always'
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/jbisa/anaconda/bin:$PATH"

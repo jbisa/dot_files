@@ -1,6 +1,6 @@
 #-----------------------------------------------------------
 # Jay Bisa <jay.bisa@gmail.com>
-# Last Updated: 9.3.2017
+# Last Updated: 2.24.2019
 #
 # ~/.gitconfig Global git configs and aliases
 #-----------------------------------------------------------
@@ -25,3 +25,4 @@
 	st = status -s
 	ci = commit
 	last = log -1 HEAD
+	rba = "for-each-ref --format='%(color:cyan)%(authordate:format:%m/%d/%Y %I:%M %p)    %(align:25,left)%(color:yellow)%(authorname)%(end) %(color:reset)%(refname:strip=3)' --sort=authordate refs/remotes"
