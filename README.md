@@ -5,8 +5,9 @@ This repository contains the bash and git configurations I find helpful for my p
 ## Getting Started
 
 Simply download this project and place the dotfiles in your home directory. The following command will append the configs in this project to whatever you have currently, instead of completely overwriting your existing configs:
+
 ```
-git clone https://github.com/jbisa/dot_files.git ~/dot_files && cat ~/dot_files/.gitconfig >> ~./gitconfig && cat ~/dot_files/.bash_profile >> ~/.bash_profile
+git clone https://github.com/jbisa/dot_files.git && cat dot_files/.gitconfig >> ~/.gitconfig && cat dot_files/.bash_profile >> ~/.bash_profile
 ```
 
 See the Prerequisites section for installing the necessary dependencies. If you already have a bash terminal open, either close and open a new terminal or run the following to see changes from the config files:
