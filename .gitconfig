@@ -35,3 +35,6 @@
 [push]
 	# infer "origin nameOfBranch" when pushing to a new or existing branch
 	default = current
+[credential]
+	# make git store username and pw
+	helper = store
