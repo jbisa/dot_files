@@ -1,28 +1,40 @@
-#-----------------------------------------------------------
-# Jay Bisa <jay.bisa@gmail.com>
-# Last Updated: 3.17.2021
-#
-# ~/.gitconfig Global git configs and aliases
-#-----------------------------------------------------------
-
 [user]
 	name = Jay Bisa
 	email = jay.bisa@gmail.com
 [alias]
+	# checkout an existing branch (provide a branch name after this)
 	co = checkout
-    	ec = config --global -e
-    	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
-    	cob = checkout -b
-    	cm = !git commit -m
-    	save = !git add -A && git commit -m 'SAVEPOINT'
-    	wip = !git add -u && git commit -m "WIP" 
-	undo = reset HEAD~1 --mixed
-    	amend = commit -a --amend
-    	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+
+	# checkout a new branch (provide a branch name after this)
+	cob = checkout -b
+
+	# open this config file
+	ec = config --global -e
+
+	# commit changes to index with a message (provide a commit message after this)
+	cm = !git commit -m
+	
+	# see existing branches
 	br = branch
+
+	# check status of files/changes in your branch
 	st = status -s
-	ci = commit
-	last = log -1 HEAD
-	rba = "for-each-ref --format='%(color:cyan)%(authordate:format:%m/%d/%Y %I:%M %p)    %(align:25,left)%(color:yellow)%(authorname)%(end) %(color:reset)%(refname:strip=3)' --sort=authordate refs/remotes"
+
+	# unstage a file from the index (provide a filename after this)
+	rmc = rm --cached
+
+	# see diff between working area and index
+	d = diff
+
+	# see diff between index and last commit 
+	dc = diff --cached
+[pager]
+	branch = false
+[core]
+	editor = vim
+[push]
+	# infer "origin nameOfBranch" when pushing to a new or existing branch
+	default = current
+[credential]
+	# make git store username and pw
+	helper = store
