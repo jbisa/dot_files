@@ -32,3 +32,6 @@
 	branch = false
 [core]
 	editor = vim
+[push]
+	# infer "origin nameOfBranch" when pushing to a new or existing branch
+	default = current
