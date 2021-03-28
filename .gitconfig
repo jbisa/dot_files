@@ -31,6 +31,15 @@
 
 	# include untracked files when stashing changes
 	stashu = stash --include-untracked
+
+	# who all stash elements
+	stashl = stash list
+
+	# put first element in stash back into working area
+	stasha = stash apply
+
+	# clear all elements in stash
+	stashc = stash clear
 [pager]
 	branch = false
 [core]
