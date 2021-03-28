@@ -13,6 +13,9 @@ ZSH_THEME="robbyrussell"
 ## set colors for LS_COLORS
 eval `dircolors ~/.dircolors`
 
+# Turn off all beeps
+unsetopt BEEP
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
