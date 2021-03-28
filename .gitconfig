@@ -28,6 +28,9 @@
 
 	# see diff between index and last commit 
 	dc = diff --cached
+
+	# include untracked files when stashing changes
+	stashu = stash --include-untracked
 [pager]
 	branch = false
 [core]
